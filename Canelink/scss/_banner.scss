@@ -1,0 +1,28 @@
+
+.container {
+  background: pink;
+  @media only screen and (min-width: 768px) {
+    background: orange;
+  }
+}
+
+.china {
+  color: red;
+  &> .star {
+    color: green;
+  }
+}
+
+
+.hello {
+  color: $orange;
+  border: $number+px solid $green;
+  a {
+    color: rgba($green,0.5);
+    color: grayscale(50%);
+    &:hover {
+      text-decoration: underline;
+
+    }
+  }
+}

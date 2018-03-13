@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+#page {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template: [header-left] "head head" 50px [header-right]
+                 [main-left]   "nav  main" 20fr  [main-right]
+                 [footer-left] "nav  foot" 40px [footer-right]
+                 / 165px 1fr;
+}
+
+header {
+  background-color: darkorange;
+  grid-area: head;
+  text-align: center;
+
+}
+h1 {
+    color: white;
+}
+nav {
+  background-color: lightgrey;
+  grid-area: nav;
+font-size: 10px;
+
+}
+.btn-group button {
+    background-color: #228B22; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 30px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 65%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #D3D3D3;
+}
+main {
+  background-color: #DCDCDC;
+  grid-area: main;
+  text-align: left;
+  font-size: 14px;
+
+}
+
+footer {
+  background-color: #DCDCDC;
+  grid-column: foot;
+}
